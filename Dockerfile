@@ -6,7 +6,7 @@ COPY package.json yarn.lock ./
 
 RUN corepack enable && \
     corepack prepare yarn@stable --activate && \
-    yarn install --frozen-lockfile
+    yarn install
 
 COPY . .
 
